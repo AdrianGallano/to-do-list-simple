@@ -1,0 +1,116 @@
+:root{
+    --text-color: #d1d5db;
+    --background-color: #111827;
+    --extra-color: #1f2937;
+    --opposing-color: #0f8980;
+    --title-color: #bf907a;
+    
+    background-color: var(--background-color);
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    color: var(--text-color);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 1rem;
+}
+
+
+#app{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(67deg,#1021388c, #2b3b519e);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 2rem 5rem;
+    
+    gap: 3rem;
+}   
+
+.project-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+hr{
+    margin: 0 -5rem;
+}
+
+
+.to-do-icon{
+    border: .5rem solid var(--opposing-color);
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+h1.title{
+    padding: 1rem;
+}
+
+p{
+    color: var(--title-color);
+    font-size: 1.3rem;
+
+}
+
+#task-envelope{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    
+    list-style-type: none;
+    padding-left: 1em;
+    border-left: 1em solid var(--opposing-color);
+}
+
+#add-task{
+    padding: 1rem 2rem;
+    background-color: var(--opposing-color);
+    border: none;
+    border-radius: 5px;
+    color: var(--background-color);
+    font-weight: 1000;
+    transition: 400ms;
+    cursor: crosshair;
+}
+
+#add-task:hover{
+    background-color: #26d4c8;
+}
+
+.task::after{
+    content: "pending";
+    padding-left: 1rem;
+    color: red;
+}
+
+/* .task{
+    
+} */
