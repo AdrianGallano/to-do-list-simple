@@ -8,6 +8,7 @@
     <title>To Do List w Node</title>
     <link rel="stylesheet" href="./styles/style.css">
     <script module="type" src="./scripts/to-do-list.js" defer></script>
+    <script src="https://kit.fontawesome.com/4889c17d41.js" crossorigin="anonymous"></script>
     <link rel="icon" href="./images/to-do-list.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +16,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-</head>
+    </head>
 
 <body>
     <main id="content">
@@ -34,8 +35,20 @@
             <div id="task-envelope">
                 <h2>Task</h2>
                 <ul class="tasks"> 
-                    <li class="task">Do something today</li>
-                    <li class="task">Damn it</li>
+                    <li class="task">
+                        <p>Do something</p> 
+                        <div class="task-selections">
+                            <button class="task-edit">Edit</button>
+                            <button class="task-delete">Delete</button>
+                        </div> 
+                    </li>
+                    <li class="task">
+                        <p>do something worthwile and probably lorem ipsum i don't know i am just typing so that i can see errors</p> 
+                        <div class="task-selections">
+                            <button class="task-edit">Edit</button>
+                            <button class="task-delete">Delete</button>
+                        </div> 
+                    </li>
                 </ul>
             </div>
         </div>
