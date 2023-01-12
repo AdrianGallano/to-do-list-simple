@@ -24,7 +24,7 @@ const changeTaskState = (task) => {
 }
 
 const deleteTask = (task) => {
-    task.parentNode.parentNode.remove()
+    task.parentNode.remove()
 }
 
 const addTask = () => {
@@ -32,23 +32,16 @@ const addTask = () => {
     let newTaskContent = prompt("Please Add a new task: ");
     let listData = document.createElement("li")
     let paraData = document.createElement("p")
-    let divData = document.createElement("div")
-    let buttonEdit  = document.createElement("button")
     let buttonDelete  = document.createElement("button")
     
     listData.classList.add("task")
-    paraData.setAttribute("data-state", "task-state")
-    divData.classList.add("task-selections")
-    buttonEdit.classList.add("task-edit")
     buttonDelete.classList.add("task-delete")
-    buttonEdit.textContent = "Edit"
     buttonDelete.textContent = "Delete"
 
-    divData.append(buttonEdit)
-    divData.append(buttonDelete)
     paraData.textContent = newTaskContent
     listData.append(paraData)
-    listData.append(divData)
+    listData.append(buttonDelete)
+    
     
     taskContainer.append(listData)
 

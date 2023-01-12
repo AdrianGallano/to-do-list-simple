@@ -120,14 +120,7 @@ ul{
     cursor: pointer;
 }
 
-/* .task > p::after{
-    content: "pending";
-    padding-left: 1rem;
-    color: red;
-} */
-
-.task-delete,
-.task-edit{
+.task-delete{
     color: var(--text-color);
     padding: .3rem .5rem;
     border: none;
@@ -140,23 +133,12 @@ ul{
     background-color: #FF3D41;
 }
 
-.task-edit{
-    background-color: #3D84E3;
-}
-
-.task-delete:hover,
-.task-edit:hover{
+.task-delete:hover{
     filter: brightness(.8);
 }
 
-.task-delete:active,
-.task-edit:active{
+.task-delete:active{
     filter: brightness(1);
-}
-
-.task-selections{
-    display: flex;
-    gap: .5em;
 }
 
 .task-cross{
