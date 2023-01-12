@@ -147,6 +147,22 @@ ul{
 }
 
 
-/* .task{
+@media (max-width: 900px){
+    #app{
+        max-width: 90vw;
+    }
+}
+
+@media (max-width: 575px){
+    :root{
+        font-size: 12px;
+    }
     
-} */
+    #app{
+        padding: 3rem 1rem;
+    }
+
+    hr{
+        margin: 0;
+    }
+}
